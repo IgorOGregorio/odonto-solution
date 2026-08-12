@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-/* Relative path: Turbopack/PostCSS fails to resolve the package export `shadcn/tailwind.css`. */
-@import "../node_modules/shadcn/dist/tailwind.css";
+@import "./shadcn.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -149,6 +148,10 @@
   }
   .text-label {
     @apply text-xs font-medium uppercase tracking-[0.2em];
+  }
+
+  .bg-hero {
+    background-color: var(--hero-bg);
   }
 
   .animate-enter {

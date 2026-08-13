@@ -36,7 +36,7 @@ Convenções:
   - Verify: `npm test` — arquivos existem e exportam arrays não vazios; FAQ home length 6
   - Files: `content/testimonials.ts`, `content/faq.ts`, `content/clinic.ts`
 
-- [ ] Task 1.5: Content das 3 páginas de tratamento
+- [x] Task 1.5: Content das 3 páginas de tratamento
   - Acceptance: `implantes.ts` com blocos (para quem / como funciona / medo da cirurgia / pagamento **“Até 15x sem juros”** / whatsappMessage); `harmonizacao.ts` com Botox, preenchimento labial, bioestimuladores; `clareamento.ts` com claim **3 tons**, `promo: { priceLabel: "R$ 1.200" }` (não null), tipos / duração / quem pode (rascunho)
   - Verify: `npm test -- content/treatments` — implantes contém `15x`; clareamento contém `3 tons` e `1.200`; harmonizacao menciona as 3 ofertas
   - Files: `content/treatments/implantes.ts`, `content/treatments/harmonizacao.ts`, `content/treatments/clareamento.ts`, `content/treatments/treatments.test.ts`

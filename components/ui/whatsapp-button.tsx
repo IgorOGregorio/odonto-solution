@@ -8,19 +8,22 @@ type WhatsAppButtonProps = {
   variant?: "default" | "outline" | "fab";
   className?: string;
   label?: string;
+  message?: string;
 };
 
 export function WhatsAppButton({
   variant = "default",
   className,
   label,
+  message,
 }: WhatsAppButtonProps) {
   const text = label ?? siteConfig.whatsapp.ctaLabel;
+  const href = getWhatsAppUrl(message);
 
   if (variant === "fab") {
     return (
       <a
-        href={getWhatsAppUrl()}
+        href={href}
         target="_blank"
         rel="noopener noreferrer"
         aria-label={text}
@@ -45,7 +48,7 @@ export function WhatsAppButton({
         className
       )}
     >
-      <a href={getWhatsAppUrl()} target="_blank" rel="noopener noreferrer">
+      <a href={href} target="_blank" rel="noopener noreferrer">
         <MessageCircle className="size-4" />
         {text}
       </a>

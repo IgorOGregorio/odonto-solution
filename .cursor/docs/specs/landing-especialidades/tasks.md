@@ -50,7 +50,7 @@ Convenções:
 
 ## Fase 2 — WhatsApp + Header
 
-- [ ] Task 2.1: `WhatsAppButton` aceita `message`
+- [x] Task 2.1: `WhatsAppButton` aceita `message`
   - Acceptance: prop opcional `message?: string` é passada a `getWhatsAppUrl(message)`; sem `message`, comportamento atual; FAB inalterado (mensagem default)
   - Verify: `npm test -- whatsapp-button` — href contém texto encodado quando `message` é passada
   - Files: `components/ui/whatsapp-button.tsx`, `components/ui/whatsapp-button.test.tsx`

@@ -103,7 +103,7 @@ Convenções:
   - Verify: inspeção + E2E home ainda tem caminho de agendar; `npm test`
   - Files: `components/sections/scheduling.tsx`
 
-- [ ] Task 4.5: Footer com âncoras extras
+- [x] Task 4.5: Footer com âncoras extras
   - Acceptance: footer pode linkar Equipe `/#equipe` e FAQ `/#faq` além do que já tem; Localização permanece no footer; header **não** ganha esses itens
   - Verify: `npm run test:e2e -- e2e/nav-masterclass.spec.ts` ainda GREEN (nav header inalterada em quantidade)
   - Files: `components/layout/footer.tsx`

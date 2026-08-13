@@ -192,7 +192,7 @@ Convenções:
   - Verify: `npm run test:e2e -- e2e/specialty-pages.spec.ts` GREEN
   - Files: `e2e/specialty-pages.spec.ts`
 
-- [ ] Task 10.2: Metadata / keywords do layout
+- [x] Task 10.2: Metadata / keywords do layout
   - Acceptance: keywords refletem o catálogo atual; **remover** `pediatria` do array de keywords; descrição da clínica continua válida
   - Verify: inspeção de `app/layout.tsx`; `npm run build` depois
   - Files: `app/layout.tsx`

@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     "Itajubá",
     "odontologia",
     "implantes",
-    "botox",
+    "harmonização facial",
     "clareamento",
-    "pediatria",
+    "especialidades odontológicas",
     siteConfig.name,
   ],
   openGraph: {

@@ -37,3 +37,17 @@ test.describe("/harmonizacao-facial", () => {
     ).toBeVisible();
   });
 });
+
+test.describe("/clareamento", () => {
+  test("shows 3 tons claim, promo price, and a scheduling CTA", async ({
+    page,
+  }) => {
+    await page.goto("/clareamento");
+
+    await expect(page.getByText(/3 tons/i)).toBeVisible();
+    await expect(page.getByText(/1\.200/)).toBeVisible();
+    await expect(
+      page.getByRole("link", { name: /WhatsApp|Agendar/i }).first(),
+    ).toBeVisible();
+  });
+});

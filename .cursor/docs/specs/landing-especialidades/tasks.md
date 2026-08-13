@@ -159,7 +159,7 @@ Convenções:
 
 ## Fase 8 — `/clareamento`
 
-- [ ] Task 8.1: E2E RED — clareamento
+- [x] Task 8.1: E2E RED — clareamento
   - Acceptance: claim **3 tons**; promoção **R$ 1.200** (ou `1.200`); CTA agendar. **RED**
   - Verify: `npm run test:e2e -- e2e/specialty-pages.spec.ts` → RED no describe novo
   - Files: `e2e/specialty-pages.spec.ts`

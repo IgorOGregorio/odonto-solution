@@ -122,7 +122,7 @@ Convenções:
   - Verify: `npm test`; grep `siteConfig.gallery` vazio
   - Files: `content/site.ts`, `components/sections/gallery.tsx`, `app/page.tsx`
 
-- [ ] Task 5.3: Shell + hero de tratamento (sem rota ainda)
+- [x] Task 5.3: Shell + hero de tratamento (sem rota ainda)
   - Acceptance: `TreatmentPage` = Header + `<main>` + Footer + FAB WhatsApp (`message` opcional); `TreatmentHero` = título, subtítulo, CTA WhatsApp. Masterclass **não** importa estes
   - Verify: typecheck; smoke test opcional do hero com RTL
   - Files: `components/treatments/treatment-page.tsx`, `components/treatments/treatment-hero.tsx`

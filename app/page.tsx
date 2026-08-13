@@ -4,10 +4,11 @@ import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { Hero } from "@/components/sections/hero";
 import { TrustBar } from "@/components/sections/trust-bar";
 import { Services } from "@/components/sections/services";
-import { About } from "@/components/sections/about";
 import { Gallery } from "@/components/sections/gallery";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Team } from "@/components/sections/team";
+import { About } from "@/components/sections/about";
+import { Faq } from "@/components/sections/faq";
 import { Scheduling } from "@/components/sections/scheduling";
 import { Location } from "@/components/sections/location";
 import { Cta } from "@/components/sections/cta";
@@ -24,6 +25,7 @@ export default function Home() {
         <Testimonials />
         <Team />
         <About />
+        <Faq />
         <Scheduling />
         <Location />
         <Cta />

@@ -72,3 +72,12 @@ test("home shows team and clinic structure", async ({ page }) => {
   ).toBeVisible();
 });
 
+test("home shows clinic FAQ with native details", async ({ page }) => {
+  await page.goto("/");
+
+  const question = page.getByText("Qual o horário de funcionamento?");
+  await expect(question).toBeVisible();
+  await expect(page.locator("#faq details")).toHaveCount(6);
+  await expect(page.locator("#faq details[open]")).toHaveCount(0);
+});
+

@@ -88,12 +88,12 @@ Convenções:
   - Verify: E2E home vê pelo menos um quote/heading de depoimentos; `npm test`
   - Files: `components/sections/testimonials.tsx`, `app/page.tsx`, `e2e/home.spec.ts`
 
-- [ ] Task 4.2: Equipe (Jady) + About = estrutura
+- [x] Task 4.2: Equipe (Jady) + About = estrutura
   - Acceptance: `Team` com só Dra. Jady (`id="equipe"`); About (`#sobre`) recentrado em estrutura usando logo + hero; sem biografia longa duplicada nos dois
   - Verify: E2E ou inspeção: heading de equipe + “estrutura”/clínica; `npm test`
   - Files: `components/sections/team.tsx`, `components/sections/about.tsx`, `app/page.tsx`
 
-- [ ] Task 4.3: FAQ da home em `<details>`
+- [x] Task 4.3: FAQ da home em `<details>`
   - Acceptance: seção `#faq` com as 6 perguntas; `<details>` fechado por padrão; sem Accordion shadcn
   - Verify: E2E home vê uma pergunta do conjunto padrão (ex. horário ou convênio); `npm test`
   - Files: `components/sections/faq.tsx`, `app/page.tsx`, `e2e/home.spec.ts`

@@ -1,7 +1,9 @@
 import Image from "next/image";
+
+import { gallery as allGallery, type GalleryItem } from "@/content/gallery";
 import { siteConfig } from "@/content/site";
 
-export function Gallery() {
+export function Gallery({ items = allGallery }: { items?: GalleryItem[] }) {
   return (
     <section id="resultados" className="py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -26,7 +28,7 @@ export function Gallery() {
         </div>
 
         <div className="mt-14 columns-1 gap-4 sm:columns-2 lg:columns-3">
-          {siteConfig.gallery.map((item) => (
+          {items.map((item) => (
             <figure
               key={item.src}
               className="mb-4 break-inside-avoid overflow-hidden rounded-xl border border-border/60 bg-card shadow-sm"

@@ -57,3 +57,7 @@ export const gallery: GalleryItem[] = [
     caption: "Resultado clínico",
   },
 ];
+
+export function galleryByTreatment(tag: TreatmentTag): GalleryItem[] {
+  return gallery.filter((item) => item.treatment === tag);
+}

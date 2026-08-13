@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { gallery } from "@/content/gallery";
+import { gallery, galleryByTreatment } from "@/content/gallery";
 import { siteConfig } from "@/content/site";
 
 describe("gallery content", () => {
@@ -24,5 +24,17 @@ describe("gallery content", () => {
     expect(botoxItems.every((item) => item.treatment === "harmonizacao")).toBe(
       true,
     );
+  });
+
+  it("filters implant cases without returning harmonizacao-only photos", () => {
+    const implants = galleryByTreatment("implantes");
+    expect(implants.length).toBeGreaterThan(0);
+    expect(
+      implants.every((item) => item.treatment === "implantes"),
+    ).toBe(true);
+    expect(implants.some((item) => item.treatment === "harmonizacao")).toBe(
+      false,
+    );
+    expect(implants.some((item) => /botox/i.test(item.src))).toBe(false);
   });
 });

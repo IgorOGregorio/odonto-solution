@@ -112,7 +112,7 @@ Convenções:
 
 ## Fase 5 — Shell de tratamento + Gallery filtrável
 
-- [ ] Task 5.1: Gallery aceita `items` + helper de filtro
+- [x] Task 5.1: Gallery aceita `items` + helper de filtro
   - Acceptance: `Gallery({ items })` default = galeria completa; `galleryByTreatment(tag)` em `content/gallery.ts`; home continua passando default (ou explícito all)
   - Verify: `npm test -- content/gallery` — filtro implantes não devolve item só de harmonizacao
   - Files: `content/gallery.ts`, `content/gallery.test.ts`, `components/sections/gallery.tsx`

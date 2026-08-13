@@ -178,7 +178,7 @@ Convenções:
   - Verify: `npm run test:e2e -- e2e/masterclass.spec.ts`
   - Files: `e2e/masterclass.spec.ts`
 
-- [ ] Task 9.2: BackLink + marketing acima do form
+- [x] Task 9.2: BackLink + marketing acima do form
   - Acceptance: `BackLink` visível, touch ≥44px, aponta `/`; Logo permanece; seções de `content/masterclass.ts` acima do `InterestForm`; **sem** Header/Footer; `actions.ts` intocado
   - Verify: `npm run test:e2e -- e2e/masterclass.spec.ts e2e/obrigado.spec.ts` GREEN
   - Files: `components/layout/back-link.tsx`, `app/masterclass/page.tsx`

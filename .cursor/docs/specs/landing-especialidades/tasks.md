@@ -21,7 +21,7 @@ Convenções:
   - Verify: `npm test -- content/specialties` — length 12, labels na ordem, hrefs corretos, `/pediatria/i` ausente
   - Files: `content/specialties.ts`, `content/specialties.test.ts`
 
-- [ ] Task 1.2: Nav enxuta em `site.ts`
+- [x] Task 1.2: Nav enxuta em `site.ts`
   - Acceptance: `siteConfig.nav` = Especialidades `/#servicos`, Resultados `/#resultados`, Clínica `/#sobre`, Agendamento `/#agendamento`, Masterclass `/masterclass`. `highlights` e `gallery` ainda podem existir (migração depois)
   - Verify: `npm test -- content/site` — nav exatamente esses 5 itens
   - Files: `content/site.ts`, `content/site.test.ts`

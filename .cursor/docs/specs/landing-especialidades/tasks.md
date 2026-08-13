@@ -136,7 +136,7 @@ Convenções:
   - Verify: `npm run test:e2e -- e2e/specialty-pages.spec.ts` → RED
   - Files: `e2e/specialty-pages.spec.ts`
 
-- [ ] Task 6.2: Implementar `/implantes`
+- [x] Task 6.2: Implementar `/implantes`
   - Acceptance: page usa shell + content `implantes.ts` + gallery filtrada + `Testimonials` (mesmo array) + pagamento 15x + CTAs; sem catálogo das 12, equipe, estrutura, mapa, teaser Masterclass, form
   - Verify: `npm run test:e2e -- e2e/specialty-pages.spec.ts` → GREEN no describe implantes
   - Files: `app/implantes/page.tsx`, `components/treatments/treatment-sections.tsx` (blocos genéricos título+texto, se precisar)

@@ -131,7 +131,7 @@ Convenções:
 
 ## Fase 6 — `/implantes`
 
-- [ ] Task 6.1: E2E RED — página implantes
+- [x] Task 6.1: E2E RED — página implantes
   - Acceptance: `e2e/specialty-pages.spec.ts` describe `/implantes`: heading Implantes; “Para quem”; “Como funciona”; medo/cirurgia; `15x`; WhatsApp; **não** “Venha nos visitar”. **RED**
   - Verify: `npm run test:e2e -- e2e/specialty-pages.spec.ts` → RED
   - Files: `e2e/specialty-pages.spec.ts`

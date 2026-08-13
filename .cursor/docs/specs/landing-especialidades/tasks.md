@@ -31,7 +31,7 @@ Convenções:
   - Verify: `npm test -- content/gallery` (smoke: length ≥ itens atuais; pelo menos 1 tag implantes e 1 harmonizacao)
   - Files: `content/gallery.ts`, `content/gallery.test.ts`
 
-- [ ] Task 1.4: Depoimentos, FAQ e clínica
+- [x] Task 1.4: Depoimentos, FAQ e clínica
   - Acceptance: `testimonials.ts` com 2–3 rascunhos em 1ª pessoa, sem sobrenome, comentário `// REVIEW`; `faq.ts` com as 6 perguntas da spec + `harmonizacaoFaq` (3–5); `clinic.ts` com `team: [Dra. Jady]` e copy de estrutura apontando logo + hero atuais
   - Verify: `npm test` — arquivos existem e exportam arrays não vazios; FAQ home length 6
   - Files: `content/testimonials.ts`, `content/faq.ts`, `content/clinic.ts`

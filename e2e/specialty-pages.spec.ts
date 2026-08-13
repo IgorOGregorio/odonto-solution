@@ -51,3 +51,33 @@ test.describe("/clareamento", () => {
     ).toBeVisible();
   });
 });
+
+const TREATMENT_URLS = [
+  "/implantes",
+  "/harmonizacao-facial",
+  "/clareamento",
+] as const;
+
+for (const path of TREATMENT_URLS) {
+  test.describe(path, () => {
+    test("does not duplicate home catalog, map, or Masterclass teaser", async ({
+      page,
+    }) => {
+      await page.goto(path);
+
+      await expect(page.locator("iframe[src*='maps']")).toHaveCount(0);
+      await expect(
+        page.getByRole("link", { name: /Conhecer a Masterclass/i }),
+      ).toHaveCount(0);
+      await expect(
+        page.getByText("Bucomaxilofacial", { exact: true }),
+      ).toHaveCount(0);
+      await expect(page.getByText("Periodontia", { exact: true })).toHaveCount(
+        0,
+      );
+      await expect(
+        page.getByText(/Fui muito bem acolhida e saí com um plano claro/i),
+      ).toBeVisible();
+    });
+  });
+}

@@ -187,7 +187,7 @@ Convenções:
 
 ## Fase 10 — Hardening
 
-- [ ] Task 10.1: E2E anti-duplicação nas 3 páginas
+- [x] Task 10.1: E2E anti-duplicação nas 3 páginas
   - Acceptance: para `/implantes`, `/harmonizacao-facial`, `/clareamento`: **não** renderizam iframe de mapa; **não** mostram teaser “Conhecer a Masterclass”; **não** listam as 12 especialidades (ex. “Bucomaxilofacial” + “Periodontia” juntos); depoimentos **podem** aparecer
   - Verify: `npm run test:e2e -- e2e/specialty-pages.spec.ts` GREEN
   - Files: `e2e/specialty-pages.spec.ts`

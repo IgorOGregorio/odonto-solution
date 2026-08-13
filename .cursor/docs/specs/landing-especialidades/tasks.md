@@ -117,7 +117,7 @@ Convenções:
   - Verify: `npm test -- content/gallery` — filtro implantes não devolve item só de harmonizacao
   - Files: `content/gallery.ts`, `content/gallery.test.ts`, `components/sections/gallery.tsx`
 
-- [ ] Task 5.2: Remover `gallery` de `site.ts`
+- [x] Task 5.2: Remover `gallery` de `site.ts`
   - Acceptance: `siteConfig.gallery` removido; Gallery/home usam só `content/gallery.ts`
   - Verify: `npm test`; grep `siteConfig.gallery` vazio
   - Files: `content/site.ts`, `components/sections/gallery.tsx`, `app/page.tsx`

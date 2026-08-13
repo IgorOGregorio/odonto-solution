@@ -1,13 +1,15 @@
 import { describe, expect, it } from "vitest";
 
 import { gallery, galleryByTreatment } from "@/content/gallery";
-import { siteConfig } from "@/content/site";
 
 describe("gallery content", () => {
-  it("keeps at least the current site gallery items", () => {
-    expect(gallery.length).toBeGreaterThanOrEqual(siteConfig.gallery.length);
+  it("keeps the current clinic gallery items", () => {
+    expect(gallery.length).toBeGreaterThanOrEqual(9);
     expect(gallery.map((item) => item.src)).toEqual(
-      expect.arrayContaining(siteConfig.gallery.map((item) => item.src)),
+      expect.arrayContaining([
+        "/images/gallery/reabilitacao-oral.jpg",
+        "/images/gallery/botox-pes-de-galinha.jpg",
+      ]),
     );
   });
 

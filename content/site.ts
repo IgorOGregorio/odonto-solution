@@ -47,53 +47,6 @@ export const siteConfig = {
     { label: "Agendamento", href: "/#agendamento" },
     { label: "Masterclass", href: "/masterclass" },
   ],
-  gallery: [
-    {
-      src: "/images/gallery/reabilitacao-oral.jpg",
-      alt: "Reabilitação oral — antes e depois",
-      caption: "Devolver a liberdade de ser quem você é",
-    },
-    {
-      src: "/images/gallery/botox-pes-de-galinha.jpg",
-      alt: "Botox — pés de galinha",
-      caption: "Toxina botulínica — pés de galinha",
-    },
-    {
-      src: "/images/highlights/botox-testa.jpg",
-      alt: "Botox — testa",
-      caption: "Toxina botulínica — testa",
-    },
-    {
-      src: "/images/gallery/resultado-01.jpg",
-      alt: "Resultado clínico",
-      caption: "Transformação de sorriso",
-    },
-    {
-      src: "/images/gallery/resultado-02.jpg",
-      alt: "Resultado clínico",
-      caption: "Caso clínico",
-    },
-    {
-      src: "/images/gallery/resultado-04.jpg",
-      alt: "Resultado clínico",
-      caption: "Estética dental",
-    },
-    {
-      src: "/images/gallery/resultado-06.jpg",
-      alt: "Resultado clínico",
-      caption: "Reabilitação estética",
-    },
-    {
-      src: "/images/gallery/resultado-07.jpg",
-      alt: "Resultado clínico",
-      caption: "Sorriso renovado",
-    },
-    {
-      src: "/images/gallery/resultado-08.jpg",
-      alt: "Resultado clínico",
-      caption: "Resultado clínico",
-    },
-  ],
 } as const;
 
 export type SiteConfig = typeof siteConfig;

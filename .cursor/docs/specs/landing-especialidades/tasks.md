@@ -173,7 +173,7 @@ Convenções:
 
 ## Fase 9 — Masterclass limpa
 
-- [ ] Task 9.1: E2E RED — Voltar + seções + sem nav da clínica
+- [x] Task 9.1: E2E RED — Voltar + seções + sem nav da clínica
   - Acceptance: `e2e/masterclass.spec.ts` além do form: link “Voltar à clínica” (ou “Voltar”) `href="/"`; textos das seções (aprender / para quem / professora / certificado); `getByRole("link", { name: "Especialidades" })` **não** visível. Form labels permanecem. **RED** nas asserts novas
   - Verify: `npm run test:e2e -- e2e/masterclass.spec.ts`
   - Files: `e2e/masterclass.spec.ts`

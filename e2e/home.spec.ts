@@ -62,3 +62,13 @@ test("home shows patient testimonials", async ({ page }) => {
   ).toBeVisible();
 });
 
+test("home shows team and clinic structure", async ({ page }) => {
+  await page.goto("/");
+
+  await expect(page.getByRole("heading", { name: /Equipe/i })).toBeVisible();
+  await expect(page.getByText(/Dra\. Jady Musa/i).first()).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: /Estrutura pensada para o seu atendimento/i }),
+  ).toBeVisible();
+});
+

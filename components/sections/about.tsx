@@ -1,6 +1,8 @@
 import Image from "next/image";
-import { siteConfig } from "@/content/site";
+
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
+import { structure } from "@/content/clinic";
+import { siteConfig } from "@/content/site";
 
 export function About() {
   return (
@@ -10,7 +12,7 @@ export function About() {
           <div className="relative">
             <div className="relative aspect-square max-w-md overflow-hidden rounded-2xl border border-border bg-hero shadow-xl lg:max-w-none">
               <Image
-                src={siteConfig.logo}
+                src={structure.images.logo}
                 alt={siteConfig.name}
                 width={694}
                 height={694}
@@ -19,8 +21,8 @@ export function About() {
             </div>
             <div className="absolute -bottom-6 -right-4 hidden aspect-[3/4] w-40 overflow-hidden rounded-xl border-4 border-background shadow-lg sm:block lg:-right-8 lg:w-48">
               <Image
-                src={siteConfig.heroImage}
-                alt={siteConfig.professional.name}
+                src={structure.images.hero}
+                alt={`Fachada e ambiente da ${siteConfig.name}`}
                 width={192}
                 height={256}
                 className="size-full object-cover object-top"
@@ -30,30 +32,17 @@ export function About() {
 
           <div className="space-y-6">
             <div>
-              <p className="text-label text-primary">A clínica</p>
+              <p className="text-label text-primary">Estrutura</p>
               <h2 className="mt-3 font-display text-3xl sm:text-4xl">
-                Excelência em odontologia em Itajubá
+                {structure.heading}
               </h2>
             </div>
 
             <p className="text-lg leading-relaxed text-muted-foreground">
-              {siteConfig.tagline}. Na {siteConfig.name}, oferecemos um
-              atendimento humanizado e personalizado, com tecnologia de ponta e
-              profissionais qualificados para cuidar da saúde bucal de toda a
-              família.
+              {structure.body}
             </p>
 
-            <p className="leading-relaxed text-muted-foreground">
-              Sob a responsabilidade técnica da{" "}
-              <strong className="text-foreground">
-                {siteConfig.professional.name}
-              </strong>{" "}
-              ({siteConfig.professional.credentials.join(" · ")}), nossa equipe
-              está preparada para atender desde consultas de rotina até
-              procedimentos estéticos e reabilitadores.
-            </p>
-
-            <WhatsAppButton className="rounded-full" />
+            <WhatsAppButton className="min-h-11 rounded-full" />
           </div>
         </div>
       </div>

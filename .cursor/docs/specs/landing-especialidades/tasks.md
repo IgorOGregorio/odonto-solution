@@ -69,7 +69,7 @@ Convenções:
   - Verify: `npm run test:e2e -- e2e/home.spec.ts` → RED nas novas asserts
   - Files: `e2e/home.spec.ts`
 
-- [ ] Task 3.2: Reescrever Services + teaser Masterclass
+- [x] Task 3.2: Reescrever Services + teaser Masterclass
   - Acceptance: `Services` lê `specialties.ts` — 3 destaques com mídia + 9 compactos (ícone + blurb + WhatsApp com `message`); teaser único após o catálogo, CTA → `/masterclass`; Pediatria some da UI; mp4 não é apagado
   - Verify: `npm run test:e2e -- e2e/home.spec.ts` → GREEN
   - Files: `components/sections/services.tsx`, `components/sections/masterclass-teaser.tsx`

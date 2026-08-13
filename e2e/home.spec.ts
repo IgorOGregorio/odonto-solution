@@ -51,3 +51,14 @@ test("home lists the 12 specialties, featured links, and Masterclass teaser", as
   await expect(page.getByText(/pediatria/i)).toHaveCount(0);
 });
 
+test("home shows patient testimonials", async ({ page }) => {
+  await page.goto("/");
+
+  await expect(
+    page.getByRole("heading", { name: /Depoimentos/i }),
+  ).toBeVisible();
+  await expect(
+    page.getByText(/Fui muito bem acolhida e saí com um plano claro/i),
+  ).toBeVisible();
+});
+

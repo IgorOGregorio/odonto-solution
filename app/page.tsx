@@ -6,6 +6,7 @@ import { TrustBar } from "@/components/sections/trust-bar";
 import { Services } from "@/components/sections/services";
 import { About } from "@/components/sections/about";
 import { Gallery } from "@/components/sections/gallery";
+import { Testimonials } from "@/components/sections/testimonials";
 import { Scheduling } from "@/components/sections/scheduling";
 import { Location } from "@/components/sections/location";
 import { Cta } from "@/components/sections/cta";
@@ -18,8 +19,9 @@ export default function Home() {
         <Hero />
         <TrustBar />
         <Services />
-        <About />
         <Gallery />
+        <Testimonials />
+        <About />
         <Scheduling />
         <Location />
         <Cta />

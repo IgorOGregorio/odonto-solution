@@ -83,7 +83,7 @@ Convenções:
 
 ## Fase 4 — Home: prova social, equipe, estrutura, FAQ, scheduling
 
-- [ ] Task 4.1: Seção Depoimentos na home
+- [x] Task 4.1: Seção Depoimentos na home
   - Acceptance: `Testimonials` renderiza `content/testimonials.ts`; `id="depoimentos"`; montado em `app/page.tsx` **depois** de Gallery e **antes** de Team/About
   - Verify: E2E home vê pelo menos um quote/heading de depoimentos; `npm test`
   - Files: `components/sections/testimonials.tsx`, `app/page.tsx`, `e2e/home.spec.ts`

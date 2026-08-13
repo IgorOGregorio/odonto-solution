@@ -41,7 +41,7 @@ Convenções:
   - Verify: `npm test -- content/treatments` — implantes contém `15x`; clareamento contém `3 tons` e `1.200`; harmonizacao menciona as 3 ofertas
   - Files: `content/treatments/implantes.ts`, `content/treatments/harmonizacao.ts`, `content/treatments/clareamento.ts`, `content/treatments/treatments.test.ts`
 
-- [ ] Task 1.6: Content de marketing da Masterclass
+- [x] Task 1.6: Content de marketing da Masterclass
   - Acceptance: `content/masterclass.ts` com `learn`, `forWhom`, `teacher` (Dra. Jady via dados já conhecidos), `differentials`, `certificate` — rascunhos. Não altera o form
   - Verify: `npm test -- content/masterclass` — exports das 5 seções presentes
   - Files: `content/masterclass.ts`, `content/masterclass.test.ts`

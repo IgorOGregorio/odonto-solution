@@ -164,7 +164,7 @@ Convenções:
   - Verify: `npm run test:e2e -- e2e/specialty-pages.spec.ts` → RED no describe novo
   - Files: `e2e/specialty-pages.spec.ts`
 
-- [ ] Task 8.2: Implementar `/clareamento`
+- [x] Task 8.2: Implementar `/clareamento`
   - Acceptance: shell + `clareamento.ts`; bloco promo **só** se `promo !== null`; gallery filtrada; Testimonials; CTA WhatsApp
   - Verify: describe clareamento GREEN
   - Files: `app/clareamento/page.tsx`

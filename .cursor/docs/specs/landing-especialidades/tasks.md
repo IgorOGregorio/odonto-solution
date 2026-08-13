@@ -64,7 +64,7 @@ Convenções:
 
 ## Fase 3 — Home: catálogo + teaser
 
-- [ ] Task 3.1: E2E RED — 12 especialidades, links, sem Pediatria, teaser
+- [x] Task 3.1: E2E RED — 12 especialidades, links, sem Pediatria, teaser
   - Acceptance: `e2e/home.spec.ts` (além do teste atual) afirma: as 12 labels visíveis; links `/implantes`, `/harmonizacao-facial`, `/clareamento`; link/texto “Conhecer a Masterclass” ou equivalente; `/pediatria/i` não visível. **RED** até 3.2
   - Verify: `npm run test:e2e -- e2e/home.spec.ts` → RED nas novas asserts
   - Files: `e2e/home.spec.ts`

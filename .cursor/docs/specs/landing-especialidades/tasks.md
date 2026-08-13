@@ -150,7 +150,7 @@ Convenções:
   - Verify: `npm run test:e2e -- e2e/specialty-pages.spec.ts` → RED no describe novo
   - Files: `e2e/specialty-pages.spec.ts`
 
-- [ ] Task 7.2: Implementar `/harmonizacao-facial`
+- [x] Task 7.2: Implementar `/harmonizacao-facial`
   - Acceptance: shell + `harmonizacao.ts` + gallery `harmonizacao` + FAQ `harmonizacaoFaq` (details) + Testimonials + CTA avaliação WhatsApp; sem FAQ “convênio” da home
   - Verify: describe harmonização GREEN
   - Files: `app/harmonizacao-facial/page.tsx`, `components/sections/faq.tsx` (permitir `items` por prop para reuso)

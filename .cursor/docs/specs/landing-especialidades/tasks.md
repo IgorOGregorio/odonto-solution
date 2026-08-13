@@ -74,7 +74,7 @@ Convenções:
   - Verify: `npm run test:e2e -- e2e/home.spec.ts` → GREEN
   - Files: `components/sections/services.tsx`, `components/sections/masterclass-teaser.tsx`
 
-- [ ] Task 3.3: Remover `highlights` de `site.ts`
+- [x] Task 3.3: Remover `highlights` de `site.ts`
   - Acceptance: `siteConfig.highlights` removido; nenhum import restante
   - Verify: `npm test`; grep `highlights` só em docs/specs se houver
   - Files: `content/site.ts`, `components/sections/services.tsx` (só se ainda referenciar)

@@ -47,36 +47,6 @@ export const siteConfig = {
     { label: "Agendamento", href: "/#agendamento" },
     { label: "Masterclass", href: "/masterclass" },
   ],
-  highlights: [
-    {
-      title: "Implantes",
-      description:
-        "Recupere a função e a estética do seu sorriso com próteses sobre implante e facetas em resina composta.",
-      image: "/images/highlights/implantes.jpg",
-      video: "/images/highlights/facetas-reel.mp4",
-    },
-    {
-      title: "Botox",
-      description:
-        "Harmonização facial com toxina botulínica para suavizar linhas de expressão com naturalidade.",
-      image: "/images/highlights/botox.jpg",
-      video: "/images/highlights/botox-reel.mp4",
-    },
-    {
-      title: "Pediatria",
-      description:
-        "Atendimento odontológico especializado para crianças, com cuidado e acolhimento.",
-      image: null,
-      video: "/images/highlights/pediatria-reel.mp4",
-    },
-    {
-      title: "Clareamento",
-      description:
-        "Sorriso mais branco e radiante com tratamentos de clareamento dental seguros e eficazes.",
-      image: null,
-      video: "/images/highlights/clareamento-reel.mp4",
-    },
-  ],
   gallery: [
     {
       src: "/images/gallery/reabilitacao-oral.jpg",

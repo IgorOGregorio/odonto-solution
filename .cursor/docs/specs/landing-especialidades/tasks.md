@@ -26,7 +26,7 @@ Convenções:
   - Verify: `npm test -- content/site` — nav exatamente esses 5 itens
   - Files: `content/site.ts`, `content/site.test.ts`
 
-- [ ] Task 1.3: Extrair galeria com tag de tratamento
+- [x] Task 1.3: Extrair galeria com tag de tratamento
   - Acceptance: `content/gallery.ts` com os itens atuais de `siteConfig.gallery` + `treatment?: "implantes" | "harmonizacao" | "clareamento"`; `reabilitacao-oral` → implantes; fotos/reels de botox → harmonizacao; sem helper de filtro ainda. `site.ts` ainda exporta `gallery` (duplicado temporário)
   - Verify: `npm test -- content/gallery` (smoke: length ≥ itens atuais; pelo menos 1 tag implantes e 1 harmonizacao)
   - Files: `content/gallery.ts`, `content/gallery.test.ts`

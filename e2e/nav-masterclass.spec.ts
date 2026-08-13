@@ -5,7 +5,7 @@ test("landing nav includes Masterclass link to /masterclass", async ({
 }) => {
   await page.goto("/");
 
-  const link = page.getByRole("link", { name: "Masterclass" });
+  const link = page.getByRole("link", { name: "Masterclass", exact: true });
   await expect(link).toBeVisible();
   await expect(link).toHaveAttribute("href", "/masterclass");
 });

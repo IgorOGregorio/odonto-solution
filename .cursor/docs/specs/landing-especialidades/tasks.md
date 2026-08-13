@@ -98,7 +98,7 @@ Convenções:
   - Verify: E2E home vê uma pergunta do conjunto padrão (ex. horário ou convênio); `npm test`
   - Files: `components/sections/faq.tsx`, `app/page.tsx`, `e2e/home.spec.ts`
 
-- [ ] Task 4.4: Scheduling WhatsApp-first
+- [x] Task 4.4: Scheduling WhatsApp-first
   - Acceptance: bloco principal = WhatsApp; agenda.link permanece como alternativa (passos atuais ok); FAB genérico intacto; **não** criar terceira seção de agendamento
   - Verify: inspeção + E2E home ainda tem caminho de agendar; `npm test`
   - Files: `components/sections/scheduling.tsx`

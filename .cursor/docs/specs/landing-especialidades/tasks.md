@@ -197,7 +197,7 @@ Convenções:
   - Verify: inspeção de `app/layout.tsx`; `npm run build` depois
   - Files: `app/layout.tsx`
 
-- [ ] Task 10.3: Verificação final da spec
+- [x] Task 10.3: Verificação final da spec
   - Acceptance: design-contract intacto; Success Criteria da spec cobertos; sem classes `brand-*` novas
   - Verify: `npm test && npm run test:e2e && npm run lint && npm run build`
   - Files: só fixes pontuais se algum comando falhar (não expandir escopo)

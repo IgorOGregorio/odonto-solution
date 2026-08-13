@@ -145,7 +145,7 @@ Convenções:
 
 ## Fase 7 — `/harmonizacao-facial`
 
-- [ ] Task 7.1: E2E RED — harmonização
+- [x] Task 7.1: E2E RED — harmonização
   - Acceptance: mesmo spec: heading; Botox; Preenchimento; Bioestimuladores; FAQ específico visível. **RED**
   - Verify: `npm run test:e2e -- e2e/specialty-pages.spec.ts` → RED no describe novo
   - Files: `e2e/specialty-pages.spec.ts`

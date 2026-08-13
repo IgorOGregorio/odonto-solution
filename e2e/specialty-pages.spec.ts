@@ -19,3 +19,21 @@ test.describe("/implantes", () => {
     await expect(page.getByText("Venha nos visitar")).toHaveCount(0);
   });
 });
+
+test.describe("/harmonizacao-facial", () => {
+  test("shows Botox, fillers, biostimulators, and treatment FAQ", async ({
+    page,
+  }) => {
+    await page.goto("/harmonizacao-facial");
+
+    await expect(
+      page.getByRole("heading", { name: /Harmonização Facial/i }),
+    ).toBeVisible();
+    await expect(page.getByText("Botox", { exact: true }).first()).toBeVisible();
+    await expect(page.getByText(/Preenchimento/i).first()).toBeVisible();
+    await expect(page.getByText(/Bioestimuladores/i).first()).toBeVisible();
+    await expect(
+      page.getByText(/Quanto tempo dura o efeito do Botox/i),
+    ).toBeVisible();
+  });
+});

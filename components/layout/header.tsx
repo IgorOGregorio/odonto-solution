@@ -34,13 +34,13 @@ export function Header() {
 
         <nav className="hidden items-center gap-8 md:flex">
           {siteConfig.nav.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className="text-sm text-white/80 transition-colors hover:text-white"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -67,14 +67,14 @@ export function Header() {
             </SheetHeader>
             <nav className="mt-8 flex flex-col gap-5">
               {siteConfig.nav.map((item) => (
-                <a
+                <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
                   className="text-lg text-foreground/80 transition-colors hover:text-primary"
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
               <SchedulingButton className="mt-2 w-full rounded-full" />
             </nav>

@@ -55,7 +55,7 @@ Convenções:
   - Verify: `npm test -- whatsapp-button` — href contém texto encodado quando `message` é passada
   - Files: `components/ui/whatsapp-button.tsx`, `components/ui/whatsapp-button.test.tsx`
 
-- [ ] Task 2.2: Header usa `next/link`
+- [x] Task 2.2: Header usa `next/link`
   - Acceptance: desktop + sheet usam `Link` com `href` de `siteConfig.nav` (já `/#…` e `/masterclass`); sheet continua fechando no click
   - Verify: `npm run test:e2e -- e2e/nav-masterclass.spec.ts` GREEN; typecheck
   - Files: `components/layout/header.tsx`

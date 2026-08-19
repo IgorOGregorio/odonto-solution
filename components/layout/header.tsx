@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { LogoMark } from "@/components/brand/logo";
 import { siteConfig } from "@/content/site";
 import { SchedulingButton } from "@/components/ui/scheduling-button";
 import { Button } from "@/components/ui/button";
@@ -19,20 +19,17 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-hero/90 backdrop-blur-md">
-      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6 md:h-16 lg:px-8">
-        <Link href="/" className="flex shrink-0 items-center gap-3">
-          <Image
-            src={siteConfig.logo}
-            alt={siteConfig.name}
-            width={694}
-            height={694}
-            className="h-16 w-auto md:h-12"
-            priority
-          />
+    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-hero">
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6 lg:h-16 lg:px-8">
+        <Link
+          href="/"
+          className="flex shrink-0 items-center rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-hero"
+          aria-label={siteConfig.name}
+        >
+          <LogoMark />
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-8 lg:flex">
           {siteConfig.nav.map((item) => (
             <Link
               key={item.href}
@@ -44,12 +41,12 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <SchedulingButton className="rounded-full" />
         </div>
 
         <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger asChild className="md:hidden">
+          <SheetTrigger asChild className="lg:hidden">
             <Button
               variant="ghost"
               size="icon"

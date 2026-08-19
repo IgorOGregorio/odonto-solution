@@ -2,6 +2,7 @@ export const harmonizacao = {
   title: "Harmonização Facial",
   subtitle:
     "Procedimentos faciais com critério clínico para suavizar marcas e valorizar traços.",
+  image: "/images/highlights/botox.jpg",
   whatsappMessage: "Quero avaliar harmonização facial",
   offers: [
     {
@@ -17,4 +18,30 @@ export const harmonizacao = {
       body: "Estimulam a produção de colágeno ao longo do tempo, com efeito gradual. Não substituem avaliação nem prometem reversão completa de flacidez.",
     },
   ],
+  howItWorks: {
+    title: "Como funciona",
+    body: "Cada procedimento começa com avaliação facial, alinhamento de expectativa e planejamento individual. A aplicação é feita com critério clínico, seguida de orientações de cuidado e retorno quando indicado.",
+    steps: [
+      {
+        title: "Avaliação",
+        description:
+          "Análise da face, conversa sobre queixas e definição do que faz sentido para o seu caso.",
+      },
+      {
+        title: "Planejamento",
+        description:
+          "Escolha de produto, dose e pontos de aplicação conforme anatomia e objetivo.",
+      },
+      {
+        title: "Aplicação",
+        description:
+          "Procedimento realizado com anestesia tópica ou local quando indicado.",
+      },
+      {
+        title: "Retorno",
+        description:
+          "Acompanhamento pós-procedimento e ajustes conforme evolução clínica.",
+      },
+    ],
+  },
 } as const;

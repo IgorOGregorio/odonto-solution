@@ -1,36 +1,47 @@
+import {
+  SectionRail,
+  SectionShell,
+} from "@/components/editorial/primitives";
 import { testimonials } from "@/content/testimonials";
 
 export function Testimonials() {
-  return (
-    <section id="depoimentos" className="bg-muted/40 py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-label text-primary">Prova social</p>
-          <h2 className="mt-3 font-display text-3xl sm:text-4xl">
-            Depoimentos
-          </h2>
-          <p className="mt-4 text-muted-foreground">
-            Relatos de quem passou pela clínica — textos em revisão com a
-            equipe.
-          </p>
-        </div>
+  const [featured, ...others] = testimonials;
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {testimonials.map((item) => (
-            <blockquote
-              key={item.name}
-              className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm"
-            >
-              <p className="text-base leading-relaxed text-foreground">
-                “{item.quote}”
+  return (
+    <SectionShell id="depoimentos" className="bg-muted/30">
+      <SectionRail
+        label="Prova social"
+        title="Depoimentos"
+        intro="Quem já passou pela clínica."
+      >
+        <div className="space-y-12">
+          {featured && (
+            <blockquote className="border-l-2 border-primary pl-6">
+              <p className="font-display text-2xl leading-snug text-foreground sm:text-3xl">
+                “{featured.quote}”
               </p>
-              <footer className="mt-4 text-sm text-muted-foreground">
-                — {item.name}
+              <footer className="mt-6 text-sm font-medium text-foreground">
+                — {featured.name}
               </footer>
             </blockquote>
-          ))}
+          )}
+
+          {others.length > 0 && (
+            <div className="grid gap-10 border-t border-border/60 pt-10 sm:grid-cols-2">
+              {others.map((item) => (
+                <blockquote key={item.name} className="space-y-4">
+                  <p className="text-base leading-relaxed text-foreground sm:text-lg">
+                    “{item.quote}”
+                  </p>
+                  <footer className="text-sm font-medium text-muted-foreground">
+                    {item.name}
+                  </footer>
+                </blockquote>
+              ))}
+            </div>
+          )}
         </div>
-      </div>
-    </section>
+      </SectionRail>
+    </SectionShell>
   );
 }

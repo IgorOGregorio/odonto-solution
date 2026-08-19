@@ -6,10 +6,8 @@ import { TrustBar } from "@/components/sections/trust-bar";
 import { Services } from "@/components/sections/services";
 import { Gallery } from "@/components/sections/gallery";
 import { Testimonials } from "@/components/sections/testimonials";
-import { Team } from "@/components/sections/team";
-import { About } from "@/components/sections/about";
+import { Clinic } from "@/components/sections/clinic";
 import { Faq } from "@/components/sections/faq";
-import { Scheduling } from "@/components/sections/scheduling";
 import { Location } from "@/components/sections/location";
 import { Cta } from "@/components/sections/cta";
 
@@ -23,10 +21,8 @@ export default function Home() {
         <Services />
         <Gallery />
         <Testimonials />
-        <Team />
-        <About />
+        <Clinic />
         <Faq />
-        <Scheduling />
         <Location />
         <Cta />
       </main>

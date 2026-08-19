@@ -62,13 +62,28 @@ test("home shows patient testimonials", async ({ page }) => {
   ).toBeVisible();
 });
 
-test("home shows team and clinic structure", async ({ page }) => {
+test("home shows team and clinic structure after testimonials", async ({
+  page,
+}) => {
   await page.goto("/");
 
-  await expect(page.getByRole("heading", { name: /Equipe/i })).toBeVisible();
-  await expect(page.getByText(/Dra\. Jady Musa/i).first()).toBeVisible();
+  const equipe = page.locator("#equipe");
+  await expect(equipe).toBeVisible();
   await expect(
-    page.getByRole("heading", { name: /Estrutura pensada para o seu atendimento/i }),
+    page.getByRole("heading", { name: /Equipe e estrutura/i }),
+  ).toBeVisible();
+  await expect(equipe.getByText(/Dra\. Jady Musa/i)).toBeVisible();
+  await expect(
+    equipe.getByRole("heading", { name: "Espaço completo" }),
+  ).toBeVisible();
+  await expect(
+    equipe.getByRole("heading", { name: "Equipamentos de alta qualidade" }),
+  ).toBeVisible();
+  await expect(
+    equipe.getByRole("heading", { name: "Especialistas e assistentes" }),
+  ).toBeVisible();
+  await expect(
+    equipe.getByRole("heading", { name: "Recepção sempre presente" }),
   ).toBeVisible();
 });
 

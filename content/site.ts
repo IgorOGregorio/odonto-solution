@@ -43,8 +43,7 @@ export const siteConfig = {
   nav: [
     { label: "Especialidades", href: "/#servicos" },
     { label: "Resultados", href: "/#resultados" },
-    { label: "Clínica", href: "/#sobre" },
-    { label: "Agendamento", href: "/#agendamento" },
+    { label: "Localização", href: "/#localizacao" },
     { label: "Masterclass", href: "/masterclass" },
   ],
 } as const;

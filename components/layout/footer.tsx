@@ -7,6 +7,7 @@ import { siteConfig } from "@/content/site";
 
 const footerNav = [
   { label: "Especialidades", href: "/#servicos" },
+  { label: "Resultados", href: "/#resultados" },
   { label: "Equipe", href: "/#equipe" },
   { label: "FAQ", href: "/#faq" },
   { label: "Localização", href: "/#localizacao" },

@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, MessageCircle, Play } from "lucide-react";
+import { ArrowUpRight, Play } from "lucide-react";
 
 import { MasterclassTeaser } from "@/components/sections/masterclass-teaser";
-import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { specialties, type Specialty } from "@/content/specialties";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
@@ -134,31 +133,15 @@ function FeaturedOverlayCard({ specialty }: { specialty: Specialty }) {
 }
 
 function SpecialtyRow({ specialty }: { specialty: Specialty }) {
-  const Icon = specialty.icon;
-
   return (
     <a
       href={getWhatsAppUrl(specialty.whatsappMessage)}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`Falar no WhatsApp sobre ${specialty.label}`}
-      className="group flex min-h-16 items-center gap-3.5 rounded-xl px-3 py-3 transition-colors hover:bg-card hover:shadow-sm focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+      aria-label={`Falar sobre ${specialty.label}`}
+      className="group flex min-h-11 items-center border-border/60 px-1 py-3 text-sm font-medium transition-colors hover:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none sm:border-r sm:px-4 lg:px-5"
     >
-      <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-        <Icon className="size-5" aria-hidden />
-      </span>
-      <span className="min-w-0 flex-1">
-        <span className="block text-sm leading-snug font-medium text-foreground">
-          {specialty.label}
-        </span>
-        <span className="mt-0.5 line-clamp-2 text-xs leading-relaxed text-muted-foreground">
-          {specialty.blurb}
-        </span>
-      </span>
-      <MessageCircle
-        className="size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-primary"
-        aria-hidden
-      />
+      {specialty.label}
     </a>
   );
 }
@@ -175,7 +158,7 @@ export function Services() {
       />
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="max-w-xl">
           <p className="text-label text-primary">Especialidades</p>
           <h2 className="mt-3 font-display text-3xl sm:text-4xl">
             Cuidado completo para o seu sorriso
@@ -193,29 +176,13 @@ export function Services() {
           ))}
         </div>
 
-        <div className="mt-4 rounded-2xl border border-border/60 bg-muted/40 p-4 sm:p-6">
-          <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 px-1 pb-4">
-            <p className="text-label text-primary">Também atendemos</p>
-            <p className="text-sm text-muted-foreground">
-              Escolha uma especialidade para falar no WhatsApp.
-            </p>
-          </div>
+        <div className="mt-14 border-t border-border/60 pt-10">
+          <p className="text-label text-primary">Também atendemos</p>
 
-          <div className="grid gap-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-4 grid gap-0 divide-y divide-border/60 sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-3">
             {others.map((specialty) => (
               <SpecialtyRow key={specialty.slug} specialty={specialty} />
             ))}
-          </div>
-
-          <div className="mt-4 flex flex-col gap-4 border-t border-border/60 pt-5 sm:flex-row sm:items-center sm:justify-between">
-            <p className="max-w-md text-sm text-muted-foreground">
-              Não sabe qual tratamento precisa? A equipe avalia seu caso e indica
-              o melhor caminho.
-            </p>
-            <WhatsAppButton
-              label="Falar com a clínica"
-              className="min-h-11 w-full rounded-full sm:w-auto"
-            />
           </div>
         </div>
 

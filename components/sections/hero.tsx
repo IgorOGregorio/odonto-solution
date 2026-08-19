@@ -2,12 +2,10 @@ import Image from "next/image";
 import { MapPin, Clock } from "lucide-react";
 import { siteConfig } from "@/content/site";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
-import { SchedulingButton } from "@/components/ui/scheduling-button";
-import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen bg-hero pt-20 text-white md:pt-16">
+    <section className="relative min-h-screen bg-hero pt-20 text-white lg:pt-16">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_oklch(0.55_0.06_65_/_0.15),_transparent_60%)]" />
 
       <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-24">
@@ -24,24 +22,7 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-            <SchedulingButton className="rounded-full px-8" />
-            <WhatsAppButton
-              variant="outline"
-              className="rounded-full border-white/30 bg-transparent px-8 text-white hover:bg-white/10 hover:text-white"
-            />
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="rounded-full border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white"
-            >
-              <a href="#localizacao">
-                <MapPin className="size-4" />
-                Ver localização
-              </a>
-            </Button>
-          </div>
+          <WhatsAppButton className="min-h-11 rounded-full px-8" />
 
           <div className="flex flex-wrap gap-x-8 gap-y-4 text-sm text-white/70">
             <div className="flex gap-2">

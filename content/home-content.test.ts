@@ -33,11 +33,17 @@ describe("faq", () => {
 });
 
 describe("clinic", () => {
-  it("lists only Dra. Jady and points structure copy to current assets", () => {
+  it("lists only Dra. Jady and describes space, equipment, staff, and reception", () => {
     expect(team).toHaveLength(1);
     expect(team[0]?.name).toMatch(/Jady/i);
     expect(structure.images.logo).toBe(siteConfig.logo);
     expect(structure.images.hero).toBe(siteConfig.heroImage);
-    expect(structure.body.trim().length).toBeGreaterThan(0);
+    expect(structure.points).toHaveLength(4);
+
+    const titles = structure.points.map((point) => point.title).join(" ");
+    expect(titles).toMatch(/espaço/i);
+    expect(titles).toMatch(/equipamento/i);
+    expect(titles).toMatch(/especialistas|assistentes/i);
+    expect(titles).toMatch(/recepção/i);
   });
 });

@@ -12,15 +12,15 @@ export const metadata: Metadata = {
 
 export default function ObrigadoPage() {
   return (
-    <main className="relative flex flex-1 flex-col items-center justify-center bg-background px-6 py-24 text-center">
+    <main className="flex flex-1 flex-col justify-center px-6 py-24">
       <ConversionEvents />
 
-      <div className="relative z-10 flex max-w-lg flex-col items-center gap-9">
-        <Logo className="animate-enter h-auto w-64 sm:w-80" />
+      <div className="mx-auto w-full max-w-lg animate-enter space-y-10">
+        <Logo variant="dark" className="h-auto w-52 sm:w-64" />
 
-        <div className="animate-enter animate-enter-delay-1 flex flex-col items-center gap-4">
+        <div className="space-y-4 border-l-2 border-primary pl-6">
           <p className="text-label text-primary">Inscrição recebida</p>
-          <h1 className="font-display text-3xl font-semibold leading-tight text-balance text-foreground sm:text-4xl">
+          <h1 className="font-display text-3xl leading-tight text-balance sm:text-4xl">
             Obrigado pelo seu interesse
           </h1>
           <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
@@ -31,16 +31,14 @@ export default function ObrigadoPage() {
           </p>
         </div>
 
-        <div className="animate-enter animate-enter-delay-2 w-full rounded-2xl border border-border bg-card px-6 py-5 shadow-sm">
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            Fique de olho no WhatsApp — a mensagem virá do número oficial da
-            Odonto Solution.
-          </p>
-        </div>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          Fique de olho no WhatsApp — a mensagem virá do número oficial da
+          Odonto Solution.
+        </p>
 
         <Link
           href="/masterclass"
-          className="animate-enter animate-enter-delay-3 text-sm font-medium text-primary underline-offset-4 transition-colors duration-200 hover:text-primary/80 hover:underline"
+          className="inline-flex min-h-11 items-center text-sm font-medium text-primary underline-offset-4 transition-colors hover:text-primary/80 hover:underline"
         >
           Voltar ao formulário
         </Link>

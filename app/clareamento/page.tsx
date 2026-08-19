@@ -3,10 +3,12 @@ import type { Metadata } from "next";
 import { Gallery } from "@/components/sections/gallery";
 import { Testimonials } from "@/components/sections/testimonials";
 import { TreatmentHero } from "@/components/treatments/treatment-hero";
+import { TreatmentInfoGrid } from "@/components/treatments/treatment-info-grid";
 import { TreatmentPage } from "@/components/treatments/treatment-page";
+import { TreatmentSteps } from "@/components/treatments/treatment-steps";
 import {
   TreatmentCta,
-  TreatmentSection,
+  TreatmentPromo,
 } from "@/components/treatments/treatment-sections";
 import { galleryByTreatment } from "@/content/gallery";
 import { clareamento } from "@/content/treatments/clareamento";
@@ -25,32 +27,43 @@ export default function ClareamentoPage() {
         title={clareamento.title}
         subtitle={clareamento.claim}
         message={clareamento.whatsappMessage}
+        image={clareamento.image}
       />
-      <TreatmentSection title={clareamento.types.title}>
-        <p>{clareamento.types.body}</p>
-      </TreatmentSection>
-      <TreatmentSection title={clareamento.duration.title}>
-        <p>{clareamento.duration.body}</p>
-      </TreatmentSection>
-      <TreatmentSection title={clareamento.whoCan.title}>
-        <p>{clareamento.whoCan.body}</p>
-      </TreatmentSection>
+
+      <TreatmentInfoGrid
+        label="Clareamento"
+        title="Entenda o tratamento"
+        intro="Protocolo, duração e indicação — sem prometer resultado idêntico para todo mundo."
+        items={[
+          {
+            title: clareamento.types.title,
+            body: clareamento.types.body,
+          },
+          {
+            title: clareamento.duration.title,
+            body: clareamento.duration.body,
+          },
+          {
+            title: clareamento.whoCan.title,
+            body: clareamento.whoCan.body,
+          },
+        ]}
+      />
+
+      <TreatmentSteps
+        title={clareamento.howItWorks.title}
+        intro={clareamento.howItWorks.body}
+        steps={clareamento.howItWorks.steps}
+      />
+
       {clareamento.promo !== null && (
-        <section className="bg-muted/40 py-16 sm:py-20">
-          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-            <p className="text-label text-primary">Promoção do mês</p>
-            <p className="mt-3 font-display text-3xl sm:text-4xl">
-              {clareamento.promo.priceLabel}
-            </p>
-            <p className="mt-4 text-sm text-muted-foreground">
-              Valor da campanha atual. Confirme disponibilidade e indicação na
-              avaliação.
-            </p>
-          </div>
-        </section>
+        <TreatmentPromo label={clareamento.promo.priceLabel} />
       )}
+
       {galleryItems.length > 0 && <Gallery items={galleryItems} />}
+
       <Testimonials />
+
       <TreatmentCta message={clareamento.whatsappMessage} />
     </TreatmentPage>
   );

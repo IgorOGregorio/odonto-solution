@@ -3,28 +3,19 @@ import { ArrowUpRight } from "lucide-react";
 
 export function MasterclassTeaser() {
   return (
-    <div className="relative mt-14 overflow-hidden rounded-2xl bg-hero px-6 py-10 text-white shadow-lg ring-1 ring-white/10 sm:px-10 sm:py-12">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-24 -right-16 size-72 rounded-full bg-[radial-gradient(circle,oklch(0.72_0.08_75/0.35),transparent_70%)]"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-28 -left-20 size-80 rounded-full bg-[radial-gradient(circle,oklch(0.55_0.06_65/0.28),transparent_70%)]"
-      />
-
-      <div className="relative flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between sm:gap-10">
+    <div className="mt-14 bg-hero px-6 py-10 text-white sm:px-10 sm:py-12">
+      <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between sm:gap-10">
         <div className="max-w-2xl space-y-4">
           <div className="flex flex-wrap items-center gap-3">
             <p className="text-label text-primary">Masterclass</p>
-            <span className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-xs font-medium tracking-wide text-white/80">
+            <span className="text-xs font-medium tracking-wide text-white/60">
               Para dentistas
             </span>
           </div>
           <h3 className="font-display text-3xl leading-tight sm:text-4xl">
             Formação em toxina botulínica e preenchimento facial
           </h3>
-          <p className="max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
+          <p className="max-w-xl text-base leading-relaxed text-white/70">
             Lista de prioridade para dentistas. Datas, valores e condições
             chegam quando as inscrições abrirem.
           </p>

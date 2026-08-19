@@ -35,6 +35,29 @@ export const faq: FaqItem[] = [
   },
 ];
 
+export const implantesFaq: FaqItem[] = [
+  {
+    question: "Quanto tempo leva o tratamento com implante?",
+    answer:
+      "Varia conforme cada caso: avaliação, instalação, cicatrização e confecção da prótese. Em geral são meses, não semanas. Na consulta explicamos as etapas e um prazo estimado para o seu plano.",
+  },
+  {
+    question: "Implante dentário dói?",
+    answer:
+      "Usamos anestesia local quando indicado. É comum sentir desconforto leve no pós-operatório, controlado com orientações e medicação se necessário. Não prometemos ausência total de dor.",
+  },
+  {
+    question: "Todo mundo pode fazer implante?",
+    answer:
+      "Não. Condições de saúde, quantidade de osso e hábitos (como tabagismo) influenciam a indicação. A decisão só é tomada após avaliação clínica e de imagem.",
+  },
+  {
+    question: "Implante substitui dente definitivamente?",
+    answer:
+      "O implante pode durar muitos anos com cuidados e acompanhamento, mas exige higiene, retornos e manutenção da prótese. Não há garantia de resultado idêntico entre pessoas.",
+  },
+];
+
 export const harmonizacaoFaq: FaqItem[] = [
   {
     question: "Quanto tempo dura o efeito do Botox?",

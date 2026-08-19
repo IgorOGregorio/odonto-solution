@@ -73,10 +73,18 @@ test("home shows team and clinic structure after testimonials", async ({
     page.getByRole("heading", { name: /Equipe e estrutura/i }),
   ).toBeVisible();
   await expect(equipe.getByText(/Dra\. Jady Musa/i)).toBeVisible();
-  await expect(equipe.getByText(/Espaço completo/i)).toBeVisible();
-  await expect(equipe.getByText(/Equipamentos de alta qualidade/i)).toBeVisible();
-  await expect(equipe.getByText(/Especialistas e assistentes/i)).toBeVisible();
-  await expect(equipe.getByText(/Recepção sempre presente/i)).toBeVisible();
+  await expect(
+    equipe.getByRole("heading", { name: "Espaço completo" }),
+  ).toBeVisible();
+  await expect(
+    equipe.getByRole("heading", { name: "Equipamentos de alta qualidade" }),
+  ).toBeVisible();
+  await expect(
+    equipe.getByRole("heading", { name: "Especialistas e assistentes" }),
+  ).toBeVisible();
+  await expect(
+    equipe.getByRole("heading", { name: "Recepção sempre presente" }),
+  ).toBeVisible();
 });
 
 test("home shows clinic FAQ with native details", async ({ page }) => {

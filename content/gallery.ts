@@ -9,7 +9,7 @@ export type GalleryItem = {
 
 export const gallery: GalleryItem[] = [
   {
-    src: "/images/gallery/reabilitacao-oral.jpg",
+    src: "/images/gallery/reabilitacao-oral.png",
     alt: "Reabilitação oral — antes e depois",
     caption: "Devolver a liberdade de ser quem você é",
     treatment: "implantes",

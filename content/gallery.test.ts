@@ -7,7 +7,7 @@ describe("gallery content", () => {
     expect(gallery.length).toBeGreaterThanOrEqual(9);
     expect(gallery.map((item) => item.src)).toEqual(
       expect.arrayContaining([
-        "/images/gallery/reabilitacao-oral.jpg",
+        "/images/gallery/reabilitacao-oral.png",
         "/images/gallery/botox-pes-de-galinha.jpg",
       ]),
     );

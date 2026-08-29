@@ -49,20 +49,20 @@ yarn-error.log*
 # ---------------------------------------------------------------------------
 
 # Pastas de originais (HEIC/MOV) antes da conversão para web
-public/images/Clareamento/10 outubro/
-public/images/Clareamento/13 novembro/
-public/images/Clareamento/16 outubro/
+public/images/clareamento/10 outubro/
+public/images/clareamento/13 novembro/
+public/images/clareamento/16 outubro/
 public/images/Limpeza e retoque botox/
 
 # Clareamento — fotos: só as referenciadas em content/treatments/clareamento-media.ts
-public/images/Clareamento/fotos/*
-!public/images/Clareamento/fotos/10-outubro-01.jpg
-!public/images/Clareamento/fotos/10-outubro-12.jpg
-!public/images/Clareamento/fotos/13-novembro-resultado.jpg
-!public/images/Clareamento/fotos/16-outubro-01.jpg
+public/images/clareamento/fotos/*
+!public/images/clareamento/fotos/10-outubro-01.jpg
+!public/images/clareamento/fotos/10-outubro-12.jpg
+!public/images/clareamento/fotos/13-novembro-resultado.jpg
+!public/images/clareamento/fotos/16-outubro-01.jpg
 
 # Clareamento — vídeos intermediários (no site: aplicacao-gel + remocao-gel)
-public/images/Clareamento/videos/sessao-*.mp4
+public/images/clareamento/videos/sessao-*.mp4
 
 # Equipe — originais HEIC e fotos web não usadas (site: team-07, team-15, team-24)
 public/images/team/*.HEIC

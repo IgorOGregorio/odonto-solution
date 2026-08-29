@@ -58,8 +58,9 @@ test("home shows patient testimonials", async ({ page }) => {
     page.getByRole("heading", { name: /Depoimentos/i }),
   ).toBeVisible();
   await expect(
-    page.getByText(/Fui muito bem acolhida e saí com um plano claro/i),
+    page.getByRole("list", { name: /Depoimentos de pacientes/i }),
   ).toBeVisible();
+  await expect(page.locator("#depoimentos img")).toHaveCount(5);
 });
 
 test("home shows team and clinic structure after testimonials", async ({
@@ -73,6 +74,12 @@ test("home shows team and clinic structure after testimonials", async ({
     page.getByRole("heading", { name: /Equipe e estrutura/i }),
   ).toBeVisible();
   await expect(equipe.getByText(/Dra\. Jady Musa/i)).toBeVisible();
+  await expect(
+    equipe.getByRole("heading", { name: "Administrativo" }),
+  ).toBeVisible();
+  await expect(
+    equipe.getByRole("heading", { name: "Nossa equipe" }),
+  ).toBeVisible();
   await expect(
     equipe.getByRole("heading", { name: "Espaço completo" }),
   ).toBeVisible();

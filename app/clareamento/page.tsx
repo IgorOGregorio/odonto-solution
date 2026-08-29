@@ -6,12 +6,16 @@ import { TreatmentHero } from "@/components/treatments/treatment-hero";
 import { TreatmentInfoGrid } from "@/components/treatments/treatment-info-grid";
 import { TreatmentPage } from "@/components/treatments/treatment-page";
 import { TreatmentSteps } from "@/components/treatments/treatment-steps";
+import { TreatmentVideos } from "@/components/treatments/treatment-videos";
 import {
   TreatmentCta,
   TreatmentPromo,
 } from "@/components/treatments/treatment-sections";
-import { galleryByTreatment } from "@/content/gallery";
 import { clareamento } from "@/content/treatments/clareamento";
+import {
+  clareamentoPageGallery,
+  clareamentoProcedure,
+} from "@/content/treatments/clareamento-media";
 
 export const metadata: Metadata = {
   title: `${clareamento.title} | Odonto Solution`,
@@ -19,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 export default function ClareamentoPage() {
-  const galleryItems = galleryByTreatment("clareamento");
+  const galleryItems = clareamentoPageGallery();
 
   return (
     <TreatmentPage message={clareamento.whatsappMessage}>
@@ -59,6 +63,8 @@ export default function ClareamentoPage() {
       {clareamento.promo !== null && (
         <TreatmentPromo label={clareamento.promo.priceLabel} />
       )}
+
+      <TreatmentVideos items={clareamentoProcedure} />
 
       {galleryItems.length > 0 && <Gallery items={galleryItems} />}
 

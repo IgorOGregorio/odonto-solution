@@ -2,7 +2,7 @@ export const harmonizacao = {
   title: "Harmonização Facial",
   subtitle:
     "Procedimentos faciais com critério clínico para suavizar marcas e valorizar traços.",
-  image: "/images/highlights/botox.jpg",
+  image: "/images/gallery/perfiloplastia-02.jpg",
   whatsappMessage: "Quero avaliar harmonização facial",
   offers: [
     {

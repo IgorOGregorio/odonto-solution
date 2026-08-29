@@ -1,25 +1,27 @@
-// REVIEW: rascunhos em 1ª pessoa para staging. Trocar pelos depoimentos
-// autorizados da cliente. Sem sobrenomes e sem fotos inventadas.
-
 export type Testimonial = {
-  quote: string;
-  name: string;
+  src: string;
+  alt: string;
 };
 
 export const testimonials: Testimonial[] = [
   {
-    quote:
-      "Fui muito bem acolhida e saí com um plano claro para o meu tratamento.",
-    name: "Ana",
+    src: "/images/testimonials/depoimento-01.jpg",
+    alt: "Depoimento de paciente sobre preenchimento labial e harmonização facial",
   },
   {
-    quote:
-      "Fiquei tranquila durante o procedimento. A equipe me explicou cada passo com calma.",
-    name: "Carlos",
+    src: "/images/testimonials/depoimento-02.jpg",
+    alt: "Depoimento de paciente sobre preenchimento facial e atendimento",
   },
   {
-    quote:
-      "Eu tinha receio de começar, mas me senti cuidada do primeiro contato até o retorno.",
-    name: "Marina",
+    src: "/images/testimonials/depoimento-03.jpg",
+    alt: "Depoimento de paciente sobre resultado estético e autoestima",
+  },
+  {
+    src: "/images/testimonials/depoimento-04.jpg",
+    alt: "Depoimento de paciente sobre autoestima após procedimento",
+  },
+  {
+    src: "/images/testimonials/depoimento-05.jpg",
+    alt: "Depoimento de paciente sobre reabilitação dentária",
   },
 ];

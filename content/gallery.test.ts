@@ -4,7 +4,7 @@ import { gallery, galleryByTreatment } from "@/content/gallery";
 
 describe("gallery content", () => {
   it("keeps the current clinic gallery items", () => {
-    expect(gallery.length).toBeGreaterThanOrEqual(9);
+    expect(gallery.length).toBeGreaterThanOrEqual(30);
     expect(gallery.map((item) => item.src)).toEqual(
       expect.arrayContaining([
         "/images/gallery/reabilitacao-oral.png",

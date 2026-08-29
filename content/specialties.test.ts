@@ -58,11 +58,12 @@ describe("specialties catalog", () => {
       video: "/images/highlights/facetas-reel.mp4",
     });
     expect(clareamento).toMatchObject({
-      video: "/images/highlights/clareamento-reel.mp4",
+      image: "/images/clareamento/fotos/13-novembro-resultado.jpg",
+      video: null,
     });
     expect(harmonizacao).toMatchObject({
-      image: "/images/highlights/botox.jpg",
-      video: "/images/highlights/botox-reel.mp4",
+      image: "/images/gallery/resultado-08.jpg",
+      video: null,
     });
   });
 

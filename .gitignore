@@ -43,6 +43,48 @@ yarn-error.log*
 # material bruto da marca (não usado pelo app — arquivos já otimizados estão em public/brand/)
 /assets
 
+# ---------------------------------------------------------------------------
+# Mídia local — material bruto e arquivos não referenciados pelo site.
+# Mantidos no disco para troca/edição; só entram no repo os assets em uso.
+# ---------------------------------------------------------------------------
+
+# Pastas de originais (HEIC/MOV) antes da conversão para web
+public/images/Clareamento/10 outubro/
+public/images/Clareamento/13 novembro/
+public/images/Clareamento/16 outubro/
+public/images/Limpeza e retoque botox/
+
+# Clareamento — fotos: só as referenciadas em content/treatments/clareamento-media.ts
+public/images/Clareamento/fotos/*
+!public/images/Clareamento/fotos/10-outubro-01.jpg
+!public/images/Clareamento/fotos/10-outubro-12.jpg
+!public/images/Clareamento/fotos/13-novembro-resultado.jpg
+!public/images/Clareamento/fotos/16-outubro-01.jpg
+
+# Clareamento — vídeos intermediários (no site: aplicacao-gel + remocao-gel)
+public/images/Clareamento/videos/sessao-*.mp4
+
+# Equipe — originais HEIC e fotos web não usadas (site: team-07, team-15, team-24)
+public/images/team/*.HEIC
+public/images/team/web/*
+!public/images/team/web/team-07.jpg
+!public/images/team/web/team-15.jpg
+!public/images/team/web/team-24.jpg
+
+# Dra. Jady — originais WhatsApp e fotos não usadas (site: jady-02, jady-04, jady-05)
+public/images/jady/WhatsApp*
+public/images/jady/jady-01.jpeg
+public/images/jady/jady-03.jpeg
+
+# Highlights/reels não referenciados no app
+public/images/highlights/botox-reel.mp4
+public/images/highlights/botox.jpg
+public/images/highlights/clareamento-reel.mp4
+public/images/highlights/pediatria-reel.mp4
+
+# Brand — pattern não referenciado
+public/brand/pattern.png
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

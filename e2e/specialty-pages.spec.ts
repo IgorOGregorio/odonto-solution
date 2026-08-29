@@ -75,9 +75,7 @@ for (const path of TREATMENT_URLS) {
       await expect(page.getByText("Periodontia", { exact: true })).toHaveCount(
         0,
       );
-      await expect(
-        page.getByText(/Fui muito bem acolhida e saí com um plano claro/i),
-      ).toBeVisible();
+      await expect(page.locator("#depoimentos img").first()).toBeVisible();
     });
   });
 }

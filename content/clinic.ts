@@ -4,6 +4,8 @@ export type TeamMember = {
   name: string;
   credentials: readonly string[];
   role: string;
+  photos: readonly string[];
+  featured?: boolean;
 };
 
 export const team: TeamMember[] = [
@@ -11,6 +13,30 @@ export const team: TeamMember[] = [
     name: siteConfig.professional.name,
     credentials: siteConfig.professional.credentials,
     role: "Responsável técnica",
+    featured: true,
+    photos: [
+      "/images/jady/jady-02.jpeg",
+      "/images/jady/jady-04.jpeg",
+      "/images/jady/jady-05.jpeg",
+    ],
+  },
+  {
+    name: "Administrativo",
+    credentials: [],
+    role: "Organização do fluxo clínico e suporte ao dia a dia da clínica",
+    photos: ["/images/team/web/team-15.jpg"],
+  },
+  {
+    name: "Especialista clínico",
+    credentials: [],
+    role: "Atendimento clínico e execução dos procedimentos indicados",
+    photos: ["/images/team/web/team-24.jpg"],
+  },
+  {
+    name: "Nossa equipe",
+    credentials: [],
+    role: "Profissionais clínicos e administrativos trabalhando juntos por você",
+    photos: ["/images/team/web/team-07.jpg"],
   },
 ];
 

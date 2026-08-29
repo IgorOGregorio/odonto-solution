@@ -6,7 +6,7 @@ export const clareamento = {
   title: "Clareamento Dental",
   subtitle: "Seu sorriso pode ficar até 3 tons mais branco com segurança.",
   claim: "Seu sorriso pode ficar até 3 tons mais branco com segurança.",
-  image: "/images/gallery/resultado-01.jpg",
+  image: "/images/clareamento/fotos/16-outubro-01.jpg",
   whatsappMessage:
     "Olá! Gostaria de agendar uma avaliação de Clareamento Dental na Odonto Solution.",
   types: {

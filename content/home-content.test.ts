@@ -6,15 +6,13 @@ import { siteConfig } from "@/content/site";
 import { testimonials } from "@/content/testimonials";
 
 describe("testimonials", () => {
-  it("exports 2–3 first-person drafts without surnames", () => {
-    expect(testimonials.length).toBeGreaterThanOrEqual(2);
-    expect(testimonials.length).toBeLessThanOrEqual(3);
+  it("exports authorized patient testimonial screenshots", () => {
+    expect(testimonials.length).toBeGreaterThanOrEqual(3);
+    expect(testimonials.length).toBeLessThanOrEqual(6);
 
     for (const item of testimonials) {
-      expect(item.quote.trim().length).toBeGreaterThan(0);
-      expect(item.name.trim().length).toBeGreaterThan(0);
-      expect(item.name).not.toMatch(/\s/);
-      expect(item.quote).toMatch(/\b(eu|me|meu|minha|fiz|fui|saí|fiquei)\b/i);
+      expect(item.src).toMatch(/^\/images\/testimonials\//);
+      expect(item.alt.trim().length).toBeGreaterThan(0);
     }
   });
 });
@@ -33,9 +31,18 @@ describe("faq", () => {
 });
 
 describe("clinic", () => {
-  it("lists only Dra. Jady and describes space, equipment, staff, and reception", () => {
-    expect(team).toHaveLength(1);
-    expect(team[0]?.name).toMatch(/Jady/i);
+  it("features Dra. Jady and lists the rest of the team by role", () => {
+    expect(team.length).toBeGreaterThanOrEqual(4);
+
+    const featured = team.find((member) => member.featured);
+    expect(featured?.name).toMatch(/Jady/i);
+    expect(featured?.photos.length).toBeGreaterThanOrEqual(3);
+
+    const support = team.filter((member) => !member.featured);
+    expect(support.length).toBeGreaterThanOrEqual(3);
+    for (const member of support) {
+      expect(member.photos[0]).toMatch(/^\/images\/team\/web\//);
+    }
     expect(structure.images.logo).toBe(siteConfig.logo);
     expect(structure.images.hero).toBe(siteConfig.heroImage);
     expect(structure.points).toHaveLength(4);

@@ -34,8 +34,7 @@ export const siteConfig = {
     state: "MG",
     cep: "37500-080",
     full: "Rua Miguel Viana, 76, Comércio — Morro Chic, Itajubá - MG, CEP 37500-080",
-    mapsQuery:
-      "Rua+Miguel+Viana,+76,+Morro+Chic,+Itajubá+-+MG,+37500-080",
+    mapsQuery: "Rua+Miguel+Viana,+76,+Morro+Chic,+Itajubá+-+MG,+37500-080",
   },
   cnpj: "51.595.834/0001-28",
   logo: "/logo.png",
@@ -44,7 +43,7 @@ export const siteConfig = {
     { label: "Especialidades", href: "/#servicos" },
     { label: "Resultados", href: "/#resultados" },
     { label: "Localização", href: "/#localizacao" },
-    { label: "Masterclass", href: "/masterclass" },
+    // { label: "Masterclass", href: "/masterclass" },
   ],
 } as const;
 

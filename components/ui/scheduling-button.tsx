@@ -17,7 +17,8 @@ export function SchedulingButton({
   href,
 }: SchedulingButtonProps) {
   const text = label ?? siteConfig.scheduling.ctaLabel;
-  const link = href ?? siteConfig.scheduling.url;
+  const link = href ?? "/#agendamento";
+  const isExternal = /^https?:\/\//.test(link);
 
   return (
     <Button
@@ -30,7 +31,12 @@ export function SchedulingButton({
         className
       )}
     >
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      <a
+        href={link}
+        {...(isExternal
+          ? { target: "_blank", rel: "noopener noreferrer" }
+          : undefined)}
+      >
         <CalendarDays className="size-4" />
         {text}
       </a>

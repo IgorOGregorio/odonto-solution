@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, Play } from "lucide-react";
 
-import { MasterclassTeaser } from "@/components/sections/masterclass-teaser";
+// import { MasterclassTeaser } from "@/components/sections/masterclass-teaser";
 import { specialties, type Specialty } from "@/content/specialties";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
@@ -186,7 +186,7 @@ export function Services() {
           </div>
         </div>
 
-        <MasterclassTeaser />
+        {/* <MasterclassTeaser /> */}
       </div>
     </section>
   );

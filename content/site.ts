@@ -15,7 +15,7 @@ export const siteConfig = {
     ctaLabel: "Falar no WhatsApp",
   },
   scheduling: {
-    url: "https://agenda.link/online_scheduling/107274",
+    url: "https://agenda.link/os/107274",
     ctaLabel: "Agendar online",
   },
   hours: {
@@ -42,6 +42,7 @@ export const siteConfig = {
   nav: [
     { label: "Especialidades", href: "/#servicos" },
     { label: "Resultados", href: "/#resultados" },
+    { label: "Agendamento", href: "/#agendamento" },
     { label: "Localização", href: "/#localizacao" },
     // { label: "Masterclass", href: "/masterclass" },
   ],

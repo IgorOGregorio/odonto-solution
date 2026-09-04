@@ -36,7 +36,7 @@ export const team: TeamMember[] = [
     name: "Nossa equipe",
     credentials: [],
     role: "Profissionais clínicos e administrativos trabalhando juntos por você",
-    photos: ["/images/team/web/team-07.jpg"],
+    photos: ["/images/team/web/team-29.jpg"],
   },
 ];
 

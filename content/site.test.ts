@@ -7,8 +7,8 @@ describe("siteConfig.nav", () => {
     expect(siteConfig.nav).toEqual([
       { label: "Especialidades", href: "/#servicos" },
       { label: "Resultados", href: "/#resultados" },
+      { label: "Agendamento", href: "/#agendamento" },
       { label: "Localização", href: "/#localizacao" },
-      { label: "Masterclass", href: "/masterclass" },
     ]);
   });
 });

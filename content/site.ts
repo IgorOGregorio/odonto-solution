@@ -9,8 +9,8 @@ export const siteConfig = {
     credentials: ["EPAO 11644", "CROMG 59178"],
   },
   whatsapp: {
-    phone: "5535999876540",
-    display: "(35) 99987-6540",
+    phone: "5535999462802",
+    display: "(35) 99946-2802",
     message: "Olá! Quero agendar uma consulta.",
     ctaLabel: "Falar no WhatsApp",
   },

@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 
+test.describe.skip("Masterclass landing is hidden", () => {
 test("masterclass page shows heading and labeled required fields", async ({
   page,
 }) => {
@@ -27,4 +28,5 @@ test("masterclass shows back link and marketing sections without clinic nav", as
     page.getByRole("link", { name: "Especialidades", exact: true }),
   ).toHaveCount(0);
   await expect(page.getByLabel(/Nome completo/i)).toBeVisible();
+});
 });

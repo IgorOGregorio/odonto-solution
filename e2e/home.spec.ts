@@ -24,7 +24,7 @@ test("home does not redirect to masterclass and shows clinic brand", async ({
   await expect(page.getByText("Odonto Solution").first()).toBeVisible();
 });
 
-test("home lists the 12 specialties, featured links, and Masterclass teaser", async ({
+test("home lists the 12 specialties and featured links", async ({
   page,
 }) => {
   await page.goto("/");
@@ -43,10 +43,6 @@ test("home lists the 12 specialties, featured links, and Masterclass teaser", as
   await expect(
     page.getByRole("link", { name: /Clareamento Dental/i }),
   ).toHaveAttribute("href", "/clareamento");
-
-  await expect(
-    page.getByRole("link", { name: /Conhecer a Masterclass/i }),
-  ).toBeVisible();
 
   await expect(page.getByText(/pediatria/i)).toHaveCount(0);
 });

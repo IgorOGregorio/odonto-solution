@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import { structure, team } from "@/content/clinic";
-import { faq, harmonizacaoFaq } from "@/content/faq";
+import { faq, harmonizacaoFaq, implantesFaq } from "@/content/faq";
 import { siteConfig } from "@/content/site";
 import { testimonials } from "@/content/testimonials";
 
@@ -27,6 +27,17 @@ describe("faq", () => {
     expect(homeQuestions).toMatch(/horário/i);
     expect(homeQuestions).toMatch(/convênio/i);
     expect(faq[0]?.answer).toContain(siteConfig.hours.full);
+
+    const answers = [...faq, ...implantesFaq].map((item) => item.answer).join(" ");
+    expect(answers).not.toMatch(/zero dor/i);
+    expect(answers).not.toMatch(/ausência total de dor/i);
+
+    const pain = implantesFaq.find((item) => item.question === "Implante dentário dói?");
+    expect(pain?.answer).toContain("anestesia local");
+    const lasting = implantesFaq.find(
+      (item) => item.question === "Implante substitui dente definitivamente?",
+    );
+    expect(lasting?.answer).toContain("solução de longo prazo");
   });
 });
 

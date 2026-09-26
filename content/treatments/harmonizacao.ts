@@ -7,15 +7,15 @@ export const harmonizacao = {
   offers: [
     {
       title: "Botox",
-      body: "A toxina botulínica suaviza linhas de expressão, como testa e pés de galinha, com o objetivo de manter a naturalidade do rosto. Dose e pontos são definidos na avaliação.",
+      body: "A toxina botulínica suaviza as linhas de expressão, como testa, região entre as sobrancelhas e pés de galinha, preservando a naturalidade e a harmonia do rosto.\n\nO planejamento é individualizado, com definição de pontos e quantidade de acordo com as características e objetivos de cada paciente.",
     },
     {
-      title: "Preenchimento labial",
-      body: "Ácido hialurônico pode dar volume e contorno aos lábios quando houver indicação. O resultado depende da anatomia e da quantidade aplicada — conversamos sobre o que é proporcional ao seu rosto.",
+      title: "Preenchimento facial",
+      body: "O preenchimento facial com ácido hialurônico pode ser utilizado para realçar contornos, melhorar proporções, devolver volume e harmonizar diferentes regiões do rosto, sempre respeitando a anatomia e a naturalidade de cada paciente.",
     },
     {
       title: "Bioestimuladores",
-      body: "Estimulam a produção de colágeno ao longo do tempo, com efeito gradual. Não substituem avaliação nem prometem reversão completa de flacidez.",
+      body: "Os bioestimuladores de colágeno estimulam gradualmente a produção de colágeno, contribuindo para melhorar a firmeza, a qualidade e a sustentação da pele ao longo do tempo.\n\nO tratamento é planejado de acordo com as necessidades de cada rosto, buscando uma aparência mais firme, rejuvenescida e natural.",
     },
   ],
   howItWorks: {

@@ -37,7 +37,6 @@ export const implantes = {
   },
   surgeryFear: {
     title: "Medo da cirurgia?",
-    body: "É comum ter receio de dor, do tempo de recuperação ou de o implante não integrar. Explicamos o que esperar, usamos anestesia quando indicado e acompanhamos o pós-operatório. Não há garantia de ausência total de desconforto nem de resultado idêntico ao de outra pessoa.",
+    body: "É comum ter receio de dor, do tempo de recuperação ou de o implante não integrar. Explicamos o que esperar, usamos anestesia quando indicado e acompanhamos o pós-operatório.",
   },
-  payment: "Até 15x sem juros",
 } as const;

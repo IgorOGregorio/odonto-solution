@@ -42,7 +42,7 @@ export function Faq({
                     <ChevronDown className="size-4" aria-hidden />
                   </span>
                 </summary>
-                <p className="pb-5 text-base leading-relaxed text-muted-foreground">
+                <p className="pb-5 text-base leading-relaxed whitespace-pre-line text-muted-foreground">
                   {item.answer}
                 </p>
               </details>

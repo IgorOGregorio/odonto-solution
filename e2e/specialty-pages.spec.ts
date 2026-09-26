@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test.describe("/implantes", () => {
-  test("shows implant content and payment terms without the home map heading", async ({
+  test("shows implant content without payment terms or the home map heading", async ({
     page,
   }) => {
     await page.goto("/implantes");
@@ -12,7 +12,8 @@ test.describe("/implantes", () => {
     await expect(page.getByText(/Para quem/i).first()).toBeVisible();
     await expect(page.getByText(/Como funciona/i).first()).toBeVisible();
     await expect(page.getByText(/cirurgia/i).first()).toBeVisible();
-    await expect(page.getByText(/15x/i)).toBeVisible();
+    await expect(page.getByText(/15x/i)).toHaveCount(0);
+    await expect(page.getByText(/Condições de pagamento/i)).toHaveCount(0);
     await expect(
       page.getByRole("link", { name: /WhatsApp/i }).first(),
     ).toBeVisible();
@@ -39,13 +40,14 @@ test.describe("/harmonizacao-facial", () => {
 });
 
 test.describe("/clareamento", () => {
-  test("shows 3 tons claim, promo price, and a scheduling CTA", async ({
+  test("shows 3 tons claim and a scheduling CTA without a promo price", async ({
     page,
   }) => {
     await page.goto("/clareamento");
 
     await expect(page.getByText(/3 tons/i)).toBeVisible();
-    await expect(page.getByText(/1\.200/)).toBeVisible();
+    await expect(page.getByText(/1\.200/)).toHaveCount(0);
+    await expect(page.getByText(/Promoção do mês/i)).toHaveCount(0);
     await expect(
       page.getByRole("link", { name: /WhatsApp|Agendar/i }).first(),
     ).toBeVisible();

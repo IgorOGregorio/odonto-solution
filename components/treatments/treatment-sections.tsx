@@ -23,16 +23,6 @@ export function TreatmentSection({
   );
 }
 
-export function TreatmentPayment({ label }: { label: string }) {
-  return (
-    <HighlightBand
-      label="Condições de pagamento"
-      value={label}
-      description="Detalhes do plano são combinados na avaliação. Sem valor total publicado nesta página."
-    />
-  );
-}
-
 export function TreatmentPromo({
   label,
   description = "Valor da campanha atual. Confirme disponibilidade e indicação na avaliação.",

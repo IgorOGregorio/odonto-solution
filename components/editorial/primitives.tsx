@@ -113,7 +113,7 @@ export function FlowList({
             <h3 className="font-display text-xl leading-snug sm:text-2xl">
               {item.title}
             </h3>
-            <p className="text-base leading-relaxed text-muted-foreground">
+            <p className="text-base leading-relaxed whitespace-pre-line text-muted-foreground">
               {item.body}
             </p>
           </div>

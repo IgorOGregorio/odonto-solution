@@ -23,7 +23,7 @@ export const faq: FaqItem[] = [
   {
     question: "Os procedimentos doem?",
     answer:
-      "Cuidamos do conforto em cada etapa e usamos anestesia quando indicado. A sensação varia de pessoa para pessoa; não prometemos “zero dor”.",
+      "Cuidamos do conforto em cada etapa e usamos anestesia quando indicado.",
   },
   {
     question: "Tem estacionamento / como chegar?",
@@ -44,7 +44,7 @@ export const implantesFaq: FaqItem[] = [
   {
     question: "Implante dentário dói?",
     answer:
-      "Usamos anestesia local quando indicado. É comum sentir desconforto leve no pós-operatório, controlado com orientações e medicação se necessário. Não prometemos ausência total de dor.",
+      "A colocação do implante é realizada com anestesia local, para que você tenha conforto durante o procedimento. No pós operatório são receitados medicamentos para evitar dor e nossa equipe acompanha todo o pós-operatório para que sua recuperação seja tranquila e segura.\n\nCada caso é planejado individualmente para proporcionar mais conforto e previsibilidade em todas as etapas do tratamento.",
   },
   {
     question: "Todo mundo pode fazer implante?",
@@ -54,7 +54,7 @@ export const implantesFaq: FaqItem[] = [
   {
     question: "Implante substitui dente definitivamente?",
     answer:
-      "O implante pode durar muitos anos com cuidados e acompanhamento, mas exige higiene, retornos e manutenção da prótese. Não há garantia de resultado idêntico entre pessoas.",
+      "O implante é uma solução de longo prazo para substituir um dente perdido. Com um bom planejamento, cuidados de higiene e acompanhamento profissional, ele pode durar muitos anos.\n\nMais do que devolver um dente, o tratamento busca recuperar função, segurança e estética para você voltar a sorrir e mastigar com tranquilidade.",
   },
 ];
 

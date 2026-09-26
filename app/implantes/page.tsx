@@ -7,10 +7,7 @@ import { TreatmentHero } from "@/components/treatments/treatment-hero";
 import { TreatmentInfoGrid } from "@/components/treatments/treatment-info-grid";
 import { TreatmentPage } from "@/components/treatments/treatment-page";
 import { TreatmentSteps } from "@/components/treatments/treatment-steps";
-import {
-  TreatmentCta,
-  TreatmentPayment,
-} from "@/components/treatments/treatment-sections";
+import { TreatmentCta } from "@/components/treatments/treatment-sections";
 import { implantesFaq } from "@/content/faq";
 import { galleryByTreatment } from "@/content/gallery";
 import { implantes } from "@/content/treatments/implantes";
@@ -51,8 +48,6 @@ export default function ImplantesPage() {
         intro={implantes.howItWorks.body}
         steps={implantes.howItWorks.steps}
       />
-
-      <TreatmentPayment label={implantes.payment} />
 
       <Gallery items={galleryByTreatment("implantes")} />
 

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FlowList, SectionRail, SectionShell } from "@/components/editorial/primitives";
 import { TeamPhotoCarousel } from "@/components/sections/team-photo-carousel";
 import { structure, team, type TeamMember } from "@/content/clinic";
+import { cn } from "@/lib/utils";
 
 function FeaturedMemberCard({ member }: { member: TeamMember }) {
   return (
@@ -28,20 +29,35 @@ function FeaturedMemberCard({ member }: { member: TeamMember }) {
 
 function TeamMemberCard({ member }: { member: TeamMember }) {
   const photo = member.photos[0];
+  const wide = member.wide === true;
 
   if (!photo) {
     return null;
   }
 
   return (
-    <article className="overflow-hidden bg-hero text-white ring-1 ring-white/10">
-      <div className="relative aspect-4/5 overflow-hidden bg-black/20">
+    <article
+      className={cn(
+        "overflow-hidden bg-hero text-white ring-1 ring-white/10",
+        wide && "sm:col-span-2 lg:col-span-3",
+      )}
+    >
+      <div
+        className={cn(
+          "relative overflow-hidden bg-black/20",
+          wide ? "aspect-video" : "aspect-4/5",
+        )}
+      >
         <Image
           src={photo}
           alt={member.name}
           fill
-          className="object-cover object-top"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className={wide ? "object-contain" : "object-cover object-top"}
+          sizes={
+            wide
+              ? "(max-width: 1152px) 100vw, 72rem"
+              : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          }
         />
         <div
           aria-hidden

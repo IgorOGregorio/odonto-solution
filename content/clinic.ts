@@ -6,6 +6,7 @@ export type TeamMember = {
   role: string;
   photos: readonly string[];
   featured?: boolean;
+  wide?: boolean;
 };
 
 export const team: TeamMember[] = [
@@ -36,7 +37,8 @@ export const team: TeamMember[] = [
     name: "Nossa equipe",
     credentials: [],
     role: "Profissionais clínicos e administrativos trabalhando juntos por você",
-    photos: ["/images/team/web/team-29.jpg"],
+    wide: true,
+    photos: ["/images/team/web/team-25.jpeg"],
   },
 ];
 

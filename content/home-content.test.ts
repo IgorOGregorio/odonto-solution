@@ -54,6 +54,9 @@ describe("clinic", () => {
     for (const member of support) {
       expect(member.photos[0]).toMatch(/^\/images\/team\/web\//);
     }
+    const group = support.find((member) => member.name === "Nossa equipe");
+    expect(group?.wide).toBe(true);
+    expect(group?.photos[0]).toBe("/images/team/web/team-25.jpeg");
     expect(structure.images.logo).toBe(siteConfig.logo);
     expect(structure.images.hero).toBe(siteConfig.heroImage);
     expect(structure.points).toHaveLength(4);

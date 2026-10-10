@@ -26,17 +26,17 @@ export const implantes = {
       {
         title: "Instalação",
         description:
-          "O implante é colocado no osso com anestesia quando indicado. Você recebe orientações de pós-operatório.",
+          "O implante é colocado com anestesia e técnicas modernas. Você recebe orientação e acompanhamento pós operatório.",
       },
       {
         title: "Prótese",
         description:
-          "Após a cicatrização, confeccionamos a coroa ou prótese que devolve função e estética ao sorriso.",
+          "Se no seu planejamento a prótese não for feita no mesmo dia, que é uma opção. Realizamos após a cicatrização do implante, a parte protética, onde confeccionamos a coroa ou a prótese que devolve função e estética ao seu sorriso.",
       },
     ],
   },
   surgeryFear: {
     title: "Medo da cirurgia?",
-    body: "É comum ter receio de dor, do tempo de recuperação ou de o implante não integrar. Explicamos o que esperar, usamos anestesia quando indicado e acompanhamos o pós-operatório.",
+    body: "É comum ter receio de dor, do tempo de recuperação ou de o implante não integrar. Explicamos o que esperar, usamos anestesia e acompanhamos o pós-operatório.",
   },
 } as const;

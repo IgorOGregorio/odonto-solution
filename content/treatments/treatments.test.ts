@@ -13,6 +13,19 @@ describe("treatment content", () => {
     expect(implantes.howItWorks.body.length).toBeGreaterThan(0);
     expect(implantes.surgeryFear.body.length).toBeGreaterThan(0);
     expect(implantes.surgeryFear.body).not.toMatch(/ausência total de desconforto/i);
+    expect(implantes.surgeryFear.body).not.toMatch(/quando indicado/i);
+    expect(implantes.surgeryFear.body).toMatch(/usamos anestesia e acompanhamos/i);
+
+    const instalacao = implantes.howItWorks.steps.find(
+      (step) => step.title === "Instalação",
+    );
+    const protese = implantes.howItWorks.steps.find(
+      (step) => step.title === "Prótese",
+    );
+    expect(instalacao?.description).toMatch(/técnicas modernas/);
+    expect(instalacao?.description).not.toMatch(/quando indicado/i);
+    expect(protese?.description).toMatch(/mesmo dia/);
+    expect(protese?.description).toMatch(/parte protética/);
     expect(implantes.whatsappMessage.length).toBeGreaterThan(0);
   });
 
